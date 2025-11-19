@@ -1,26 +1,98 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    /* Backgrounds */
+    --background: #ffffff; /* base-surface-1 */
+    --foreground: #1a1a1a; /* text-dark-primary */
+    
+    --card: #ffffff; /* base-surface-1 */
+    --card-foreground: #1a1a1a;
+
+    --popover: #ffffff;
+    --popover-foreground: #1a1a1a;
+
+    /* Brand / Primary */
+    --primary: #1559ea; /* state-brand-active */
+    --primary-foreground: #ffffff; /* text-light-primary */
+    --primary-hover: #3479e9; /* state-brand-hover */
+
+    /* Secondary */
+    --secondary: #f4f4f5; /* base-fill-1 */
+    --secondary-foreground: #1a1a1a;
+
+    /* Muted */
+    --muted: #f4f4f5; /* base-fill-1 */
+    --muted-foreground: #52525b; /* base-fill-5 */
+
+    /* Accent */
+    --accent: #f4f4f5; /* base-fill-1 */
+    --accent-foreground: #1a1a1a;
+
+    /* Destructive */
+    --destructive: #dc2828; /* state-danger-active */
+    --destructive-foreground: #ffffff;
+    --destructive-hover: #ff6565; /* state-danger-hover */
+
+    /* Border / Input */
+    --border: #e1e1e2; /* base-border */
+    --input: #e1e1e2; /* base-border */
+    --ring: #1559ea; /* state-brand-active */
+
+    /* Radius */
+    --radius: 0.75rem; /* radi-6 = 12px */
+
+    /* Frames X Specifics */
+    --base-surface-1: #ffffff;
+    --base-surface-2: #fcfcfc;
+    --base-fill-1: #f4f4f5;
+    --base-fill-2: #e1e1e2;
+    --base-fill-5: #52525b;
+  }
+
+  .dark {
+    /* 
+      Note: Frames X tokens provided were mostly light mode. 
+      I am inferring reasonable dark mode defaults or placeholders 
+      until dark mode tokens are extracted.
+    */
+    --background: #09090b;
+    --foreground: #fafafa;
+
+    --card: #09090b;
+    --card-foreground: #fafafa;
+
+    --popover: #09090b;
+    --popover-foreground: #fafafa;
+
+    --primary: #3479e9; /* using hover state as lighter primary for dark */
+    --primary-foreground: #fafafa;
+
+    --secondary: #27272a;
+    --secondary-foreground: #fafafa;
+
+    --muted: #27272a;
+    --muted-foreground: #a1a1aa;
+
+    --accent: #27272a;
+    --accent-foreground: #fafafa;
+
+    --destructive: #7f1d1d;
+    --destructive-foreground: #fafafa;
+
+    --border: #27272a;
+    --input: #27272a;
+    --ring: #1d4ed8;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
 }
