@@ -1,0 +1,166 @@
+{
+  "font-family": {
+    "value": "Inter",
+    "type": "text"
+  },
+  "font-weight": {
+    "extra-light": {
+      "value": "Extra Light",
+      "type": "text"
+    },
+    "light": {
+      "value": "Light",
+      "type": "text"
+    },
+    "regular": {
+      "value": "Regular",
+      "type": "text"
+    },
+    "medium": {
+      "value": "Medium",
+      "type": "text"
+    },
+    "semi-bold": {
+      "value": "Semi Bold",
+      "type": "text"
+    },
+    "bold": {
+      "value": "Bold",
+      "type": "text"
+    },
+    "extra-bold": {
+      "value": "Extra Bold",
+      "type": "text"
+    }
+  },
+  "font-size": {
+    "xs": {
+      "value": 12,
+      "type": "number"
+    },
+    "sm": {
+      "value": 14,
+      "type": "number"
+    },
+    "base": {
+      "value": 16,
+      "type": "number"
+    },
+    "lg": {
+      "value": 18,
+      "type": "number"
+    },
+    "xl": {
+      "value": 20,
+      "type": "number"
+    },
+    "2xl": {
+      "value": 24,
+      "type": "number"
+    },
+    "3xl": {
+      "value": 30,
+      "type": "number"
+    },
+    "4xl": {
+      "value": 36,
+      "type": "number"
+    },
+    "5xl": {
+      "value": 48,
+      "type": "number"
+    },
+    "6xl": {
+      "value": 60,
+      "type": "number"
+    },
+    "7xl": {
+      "value": 72,
+      "type": "number"
+    },
+    "8xl": {
+      "value": 96,
+      "type": "number"
+    },
+    "9xl": {
+      "value": 128,
+      "type": "number"
+    }
+  },
+  "line-height": {
+    "xs": {
+      "value": 18,
+      "type": "number"
+    },
+    "sm": {
+      "value": 22,
+      "type": "number"
+    },
+    "base": {
+      "value": 24,
+      "type": "number"
+    },
+    "lg": {
+      "value": 28,
+      "type": "number"
+    },
+    "xl": {
+      "value": 32,
+      "type": "number"
+    },
+    "2xl": {
+      "value": 38,
+      "type": "number"
+    },
+    "3xl": {
+      "value": 42,
+      "type": "number"
+    },
+    "4xl": {
+      "value": 52,
+      "type": "number"
+    },
+    "5xl": {
+      "value": 64,
+      "type": "number"
+    },
+    "6xl": {
+      "value": 86,
+      "type": "number"
+    },
+    "7xl": {
+      "value": 108,
+      "type": "number"
+    },
+    "8xl": {
+      "value": 144,
+      "type": "number"
+    },
+    "9xl": {
+      "value": 192,
+      "type": "number"
+    }
+  },
+  "letter-spacing": {
+    "base": {
+      "value": 0,
+      "type": "number"
+    },
+    "sm": {
+      "value": 0.6,
+      "type": "number"
+    },
+    "md": {
+      "value": 1.2,
+      "type": "number"
+    },
+    "lg": {
+      "value": 2,
+      "type": "number"
+    },
+    "xl": {
+      "value": 3,
+      "type": "number"
+    }
+  }
+}

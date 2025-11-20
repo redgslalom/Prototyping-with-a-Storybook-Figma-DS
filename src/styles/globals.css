@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap');
+
+:root {
+  font-family: 'Inter', sans-serif;
+
+  /* Colors - Blue (Brand) */
+  --colors-blue-50: #f2f7ff;
+  --colors-blue-100: #dcebfe;
+  --colors-blue-200: #bedbfe;
+  --colors-blue-300: #91c3fd;
+  --colors-blue-400: #61a6fa;
+  --colors-blue-500: #3479e9;
+  --colors-blue-600: #1559ea;
+  --colors-blue-700: #173fab;
+  --colors-blue-800: #162f82;
+  --colors-blue-900: #0c1736;
+
+  /* Colors - Red (Danger) */
+  --colors-red-50: #fef1f1;
+  --colors-red-100: #ffdcdc;
+  --colors-red-200: #ffc9c9;
+  --colors-red-300: #ffa0a0;
+  --colors-red-400: #ff6565;
+  --colors-red-500: #ef4343;
+  --colors-red-600: #dc2828;
+  --colors-red-700: #b11b1b;
+  --colors-red-800: #821717;
+  --colors-red-900: #531313;
+
+  /* Colors - Gray (Neutral) */
+  --colors-gray-50: #fcfcfc;
+  --colors-gray-100: #f4f4f5;
+  --colors-gray-200: #e1e1e2;
+  --colors-gray-300: #d0d0d4;
+  --colors-gray-400: #a1a1aa;
+  --colors-gray-500: #7a7a83;
+  --colors-gray-600: #52525b;
+  --colors-gray-700: #3f3f46;
+  --colors-gray-800: #27272a;
+  --colors-gray-900: #1d1d20;
+
+  /* Colors - Alpha */
+  --colors-alpha-light-900: #ffffff;
+  --colors-alpha-dark-200: #1a1a1a2e;
+  
+  /* Spacing */
+  --spacing-0: 0px;
+  --spacing-1: 1px;
+  --spacing-2: 2px;
+  --spacing-3: 4px;
+  --spacing-4: 6px;
+  --spacing-5: 8px;
+  --spacing-6: 10px;
+  --spacing-7: 12px;
+  --spacing-8: 16px;
+  --spacing-9: 20px;
+  --spacing-10: 24px;
+  --spacing-11: 28px;
+  --spacing-12: 32px;
+  --spacing-13: 36px;
+  --spacing-14: 40px;
+  --spacing-15: 44px;
+  --spacing-16: 48px;
+  --spacing-17: 56px;
+  --spacing-18: 64px;
+
+  /* Border Radius */
+  --radi-0: 0px;
+  --radi-1: 2px;
+  --radi-2: 4px;
+  --radi-3: 6px;
+  --radi-4: 8px;
+  --radi-5: 10px;
+  --radi-6: 12px;
+  --radi-7: 16px;
+  --radi-8: 22px;
+  --radi-9: 28px;
+  --radi-10: 1000px;
+
+  /* Font Sizes */
+  --font-size-0: 12px;
+  --font-size-1: 14px;
+  --font-size-2: 16px;
+  --font-size-3: 18px;
+  --font-size-4: 20px;
+  --font-size-5: 24px;
+  --font-size-6: 30px;
+  --font-size-7: 36px;
+  
+  /* Line Heights (Approximate based on tokens) */
+  /* Font Weights */
+  --font-weight-extra-light: 200;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extra-bold: 800;
+  --line-height-sm: 22px;
+  --line-height-base: 24px;
+  --line-height-lg: 28px;
+  --line-height-xl: 32px;
+
+  /* Icon Sizes */
+  --icon-xs: 12px;
+  --icon-sm: 16px;
+  --icon-md: 20px;
+  --icon-lg: 24px;
+  --icon-xl: 28px;
+  --icon-2xl: 32px;
+
+  /* Stroke Widths */
+  --stroke-sm: 1px;
+  --stroke-md: 1.5px;
+  --stroke-lg: 2px;
+  --stroke-xl: 3px;
+}

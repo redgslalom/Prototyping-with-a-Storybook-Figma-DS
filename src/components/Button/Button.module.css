@@ -1,0 +1,210 @@
+/* Base Styles */
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  border-style: solid;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  font-weight: var(--font-weight-medium);
+  white-space: nowrap;
+  transition: all 0.2s ease-in-out;
+  box-sizing: border-box;
+}
+
+.button:disabled {
+  cursor: not-allowed;
+  /* Reset opacity as we are using specific colors */
+  opacity: 1;
+  /* Apply generic disabled styles which seem shared across variants in Figma */
+  background-color: var(--colors-gray-100);
+  color: var(--colors-alpha-dark-200);
+  border-color: transparent; /* Assuming no border for disabled based on code "border-0" implied or simple bg fill */
+}
+
+/* Sizes */
+.xl {
+  height: var(--spacing-17); /* 56px */
+  padding: 0 var(--spacing-10); /* 24px */
+  gap: var(--spacing-7); /* 12px */
+  border-radius: var(--radi-6); /* 12px */
+  font-size: var(--font-size-4); /* 20px */
+  line-height: 32px;
+}
+
+.large {
+  height: var(--spacing-15); /* 44px */
+  padding: 0 var(--spacing-8); /* 16px */
+  gap: var(--spacing-7); /* 12px */
+  border-radius: var(--radi-6); /* 12px */
+  font-size: var(--font-size-3); /* 18px */
+  line-height: 28px;
+}
+
+.medium {
+  height: var(--spacing-15); /* 44px */
+  padding: 0 var(--spacing-8); /* 16px */
+  gap: var(--spacing-5); /* 8px */
+  border-radius: var(--radi-6); /* 12px */
+  font-size: var(--font-size-2); /* 16px */
+  line-height: 24px;
+}
+
+.small {
+  height: var(--spacing-13); /* 36px */
+  padding: 0 var(--spacing-7); /* 12px */
+  gap: var(--spacing-3); /* 4px */
+  border-radius: var(--radi-6); /* 12px */
+  font-size: var(--font-size-1); /* 14px */
+  line-height: 22px;
+}
+
+/* Types (Variants) */
+
+/* Default (Primary) */
+.default {
+  background-color: var(--colors-blue-600);
+  color: var(--colors-alpha-light-900);
+  border-width: var(--stroke-sm);
+  border-color: transparent;
+}
+
+.default:hover:not(:disabled) {
+  background-color: var(--colors-blue-500);
+  border-color: var(--colors-blue-600); /* state-brand-active */
+}
+
+.default:active:not(:disabled) {
+  background-color: var(--colors-blue-400);
+}
+
+/* Focused: Blue BG, Blue Border (3px) */
+.default:focus-visible,
+.default.focused {
+  background-color: var(--colors-blue-600); /* State Brand Active */
+  /* Use box-shadow to simulate border growth outside to prevent layout shift */
+  box-shadow: 0 0 0 var(--stroke-xl) var(--colors-blue-400);
+  outline: none;
+  /* Maintain original border width */
+  border-width: var(--stroke-sm);
+}
+
+/* Secondary */
+.secondary {
+  background-color: var(--colors-gray-50);
+  color: var(--colors-gray-900);
+  border-width: var(--stroke-sm);
+  border-color: var(--colors-gray-200);
+}
+
+.secondary:hover:not(:disabled) {
+  background-color: var(--colors-gray-200);
+}
+
+.secondary:active:not(:disabled) {
+  background-color: var(--colors-gray-100);
+}
+
+/* Focused: Surface 2 BG, Blue Border (3px) */
+.secondary:focus-visible,
+.secondary.focused {
+  background-color: var(--colors-gray-50); /* Base Surface 2 */
+  box-shadow: 0 0 0 var(--stroke-xl) var(--colors-blue-400);
+  outline: none;
+  /* Maintain original border width */
+  border-width: var(--stroke-sm);
+  border-color: var(--colors-gray-200); /* Keep original border color or transparent if shadow covers it */
+}
+
+/* Ghost */
+.ghost {
+  background-color: transparent;
+  color: var(--colors-blue-600);
+  border-width: var(--stroke-sm);
+  border-color: var(--colors-blue-600);
+}
+
+.ghost:hover:not(:disabled) {
+  color: var(--colors-blue-500);
+  border-color: var(--colors-blue-500);
+  /* Use box-shadow to simulate 2px border (1px border + 1px shadow) to avoid layout shift */
+  /* border-width: var(--stroke-lg); -> Removed to avoid shift */
+  box-shadow: 0 0 0 1px var(--colors-blue-500);
+}
+
+.ghost:active:not(:disabled) {
+  background-color: var(--colors-gray-50);
+}
+
+/* Focused: Surface 1 BG, Blue Border (3px) */
+.ghost:focus-visible,
+.ghost.focused {
+  background-color: var(--colors-alpha-light-900); /* Base Surface 1 */
+  box-shadow: 0 0 0 var(--stroke-xl) var(--colors-blue-400);
+  outline: none;
+  /* Maintain original border width */
+  border-width: var(--stroke-sm);
+}
+
+/* Danger */
+.danger {
+  background-color: var(--colors-red-600);
+  color: var(--colors-alpha-light-900);
+  border-width: var(--stroke-sm);
+  border-color: transparent;
+}
+
+.danger:hover:not(:disabled) {
+  background-color: var(--colors-red-400);
+}
+
+.danger:active:not(:disabled) {
+  background-color: var(--colors-red-200);
+}
+
+/* Focused: Red BG, Blue Border (3px) */
+.danger:focus-visible,
+.danger.focused {
+  background-color: var(--colors-red-600); /* State Danger Active */
+  box-shadow: 0 0 0 var(--stroke-xl) var(--colors-blue-400);
+  outline: none;
+  /* Maintain original border width */
+  border-width: var(--stroke-sm);
+}
+
+/* Explicit Disabled Override for Border (since some variants have borders) */
+.secondary:disabled,
+.ghost:disabled {
+  border-color: transparent; /* Assuming disabled state removes border for these too based on "base-fill-1" background */
+}
+
+
+/* Icon Containers */
+.iconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Icon Sizes */
+.xl .iconWrapper {
+  width: var(--icon-2xl);
+  height: var(--icon-2xl);
+}
+
+.large .iconWrapper {
+  width: var(--icon-xl);
+  height: var(--icon-xl);
+}
+
+.medium .iconWrapper {
+  width: var(--icon-lg);
+  height: var(--icon-lg);
+}
+
+.small .iconWrapper {
+  width: var(--icon-md);
+  height: var(--icon-md);
+}

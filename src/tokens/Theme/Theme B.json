@@ -1,0 +1,98 @@
+{
+  "state$": {
+    "brand": {
+      "active": {
+        "value": "{colors.orange.600}",
+        "type": "color"
+      },
+      "hover": {
+        "value": "{colors.orange.500}",
+        "type": "color"
+      },
+      "selected": {
+        "value": "{colors.orange.400}",
+        "type": "color"
+      }
+    },
+    "highlight": {
+      "active": {
+        "value": "{colors.purple.600}",
+        "type": "color"
+      },
+      "hover": {
+        "value": "{colors.purple.300}",
+        "type": "color"
+      },
+      "selected": {
+        "value": "{colors.purple.200}",
+        "type": "color"
+      }
+    },
+    "danger": {
+      "active": {
+        "value": "{colors.rose.600}",
+        "type": "color"
+      },
+      "hover": {
+        "value": "{colors.rose.400}",
+        "type": "color"
+      },
+      "selected": {
+        "value": "{colors.rose.200}",
+        "type": "color"
+      }
+    },
+    "success": {
+      "active": {
+        "value": "{colors.teal.600}",
+        "type": "color"
+      },
+      "hover": {
+        "value": "{colors.teal.400}",
+        "type": "color"
+      },
+      "selected": {
+        "value": "{colors.teal.300}",
+        "type": "color"
+      }
+    }
+  },
+  "base$": {
+    "disabled": {
+      "value": "{colors.alpha.dark.200}",
+      "type": "color"
+    },
+    "border": {
+      "value": "{colors.bronze.200}",
+      "type": "color"
+    },
+    "surface-2": {
+      "value": "{colors.bronze.50}",
+      "type": "color"
+    },
+    "fill-2": {
+      "value": "{colors.bronze.200}",
+      "type": "color"
+    },
+    "fill-4": {
+      "value": "{colors.bronze.400}",
+      "type": "color"
+    },
+    "fill-5": {
+      "value": "{colors.bronze.600}",
+      "type": "color"
+    },
+    "fill-1": {
+      "value": "{colors.bronze.100}",
+      "type": "color"
+    },
+    "surface-1": {
+      "value": "{colors.alpha.light.900}",
+      "type": "color"
+    },
+    "fill-3": {
+      "value": "{colors.bronze.300}",
+      "type": "color"
+    }
+  }
+}

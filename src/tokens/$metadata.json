@@ -1,0 +1,20 @@
+{
+  "tokenSetOrder": [
+    "Color Mode/Light",
+    "Color Mode/Dark",
+    "Theme/Theme A",
+    "Theme/Theme B",
+    "Breakpoints/Desktop",
+    "Breakpoints/Tablet",
+    "Breakpoints/Mobile",
+    "Typography/Font A",
+    "Typography/Font B",
+    "Sizing/Compact",
+    "Sizing/Spacious",
+    "Radius/Default",
+    "Radius/Rounded",
+    "Radius/Sharp",
+    ".Components/Mode 1",
+    ""
+  ]
+}
